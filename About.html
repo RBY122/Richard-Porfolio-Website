@@ -3,72 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Richard Boakye Yiadom</title>
- <!-- Styles -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-  
+
 <body>
-  <nav style="background-color: #05445E; padding: 1em; display: flex; justify-content: space-between; align-items: center; color: white;">
-  <h2 style="margin: 0;">Boakye Richard Yiadom</h2>
-  <ul style="list-style: none; display: flex; gap: 1.5em; margin: 0;">
-    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-    <li><a href="About.html" style="color: white; text-decoration: none;">About</a></li>
-    <li><a href="Contacts.html" style="color: white; text-decoration: none;">Contacts</a></li>
-  </ul>
-</nav>
-
-  
-<section style="padding: 4em 2em; background-color: #f2f2f2;">
-  <h1 style="text-align: center; color: #05445E;">About Me</h1>
-
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2em; max-width: 900px; margin: 2em auto;">
-    <img src="images/richard-profile.jpg" alt=" Portrait of Richard Boakye Yiadom, IT educator and developer" style="width: 180px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-    <div style="flex: 1; font-size: 1.1em;">
-      <p>
-        I'm <strong>Richard Boakye Yiadom</strong>, a final-year IT Education student and aspiring data analyst dedicated to transforming ideas into real-world solutions. From building responsive web platforms to documenting user flows and dashboards, my work focuses on blending technology with education to serve local and global needs.
-      </p>
-      <p>
-        Guided by curiosity, community, and creativity, I’ve developed systems like <a href="bloodbridge.html">BloodBridge</a> for efficient blood logistics and <a href="Scholar.html">Scholar</a> to enhance school management. I also contribute to forum-based projects and STEAM initiatives to inspire practical learning for youth across Ghana and beyond.
-      </p>
-      <p style="font-style: italic; color: #189AB4; text-align: center;">
-        “Empowering communities through education, data, and innovation.”
-      </p>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #05445E; padding: 1em;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="index.html">Boakye Richard Yiadom</a>
+      <ul class="navbar-nav ms-auto d-flex flex-row gap-4">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contacts.html">Contacts</a></li>
+      </ul>
     </div>
+  </nav>
+  
+<!-- About Section -->
+<section style="padding: 4em 2em; background-color: #f2f2f2;">
+  <div class="container">
+    <h1 class="text-center mb-5" style="color: #05445E; font-weight: 700;">About Me</h1>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="images/richard-profile.jpg" alt="Portrait of Richard Boakye Yiadom, IT educator and developer" class="rounded-circle shadow" style="width: 180px;">
+      </div>
+      <div class="col-md-8">
+        <p style="font-size: 1.1em;">
+          I'm <strong>Richard Boakye Yiadom</strong>, a final-year IT Education student and aspiring data analyst dedicated to transforming bold ideas into impactful digital solutions. From building responsive web platforms to crafting dashboards and educational systems, my work bridges innovation, accessibility, and user experience.
+        </p>
+        <p style="font-size: 1.1em;">
+          Fueled by curiosity and community, I've developed projects like <a href="bloodbridge.html">BloodBridge</a>, <a href="Scholar.html">Scholar</a>, and <a href="forum.html">Forum System</a> to reimagine school operations, communication tools, and healthcare logistics. I also contribute to STEAM programs to help young learners discover the magic of technology.
+        </p>
+        <p class="fst-italic text-center" style="color: #189AB4;">“Empowering communities through education, data, and innovation.”</p>
+      </div>
+    </div>
+
+    <!-- Academic Background -->
+    <h2 style="color: #05445E;">🎓 Academic Background</h2>
+    <ul class="list-unstyled" style="font-size: 1.05em;">
+      <li><strong>Degree:</strong> BSc. Information Technology Education (Expected Jan 2026)</li>
+      <li><strong>Institution:</strong> Akenten Appiah-Menka University of Skills Training & Entrepreneurial Development (AAMUSTED)</li>
+      <li><strong>Award:</strong> Dean’s Award for Innovation in Educational Technology</li>
+      <li><strong>Dissertation:</strong> <em>“Bridging the Digital Divide: Enhancing Accessibility in Ghanaian Educational Platforms”</em></li>
+    </ul>
+
+    <!-- What I Do -->
+    <h2 style="color: #05445E;">💻 What I Do</h2>
+    <p style="font-size: 1.05em;">
+      I specialize in frontend development using ASP.NET Core and Razor Pages, design responsive interfaces with accessibility in mind, and build data visualizations with Power BI and SQL. I document workflows with precision and create scalable solutions that address education and community needs.
+    </p>
+
+    <!-- Portfolio Highlights -->
+    <h2 style="color: #05445E;">🌍 Portfolio Highlights</h2>
+    <ul class="list-unstyled" style="font-size: 1.05em;">
+      <li><a href="bloodbridge.html">BloodBridge</a> – Logistics platform improving blood donation through clean design and navigation enhancements.</li>
+      <li><a href="Scholar.html">Scholar Platform</a> – Streamlining education operations with dashboards, role-based access, and real-time features.</li>
+      <li><a href="forum.html">Forum System</a> – Community engagement tool built with SignalR, modular roles, and live messaging components.</li>
+    </ul>
+
+    <!-- Core Values -->
+    <h2 style="color: #05445E;">✨ Core Values</h2>
+    <p style="font-size: 1.05em;">
+      Purposeful design. Inclusive systems. Technical precision. Every project I work on is a reflection of my commitment to community impact and digital empowerment.
+    </p>
   </div>
-
-  <h2 style="color: #05445E;">🎓 Academic Background</h2>
-  <ul style="list-style: none; padding-left: 0; font-size: 1.05em;">
-    <li>BSc. Information Technology Education (Expected Jan 2026)</li>
-    <li>Akenten Appiah-Menka University of Skills Training & Entrepreneurial Development (AAMUSTED)</li>
-   
-  </ul>
-
-  <h2 style="color: #05445E;">💻 What I Do</h2>
-  <p style="font-size: 1.05em;">
-    I specialize in UI/UX design, ASP.NET Core development, and data analysis using Power BI and SQL. Whether I’m prototyping new products or documenting technical workflows, I thrive on solving meaningful problems through digital transformation.
-  </p>
-
-  <h2 style="color: #05445E;">🌍 Portfolio Highlights</h2>
-  <ul style="list-style: none; padding-left: 0; font-size: 1.05em;">
-    <li><a href="bloodbridge.html">BloodBridge</a> – Optimizing blood donation logistics with responsive design and user-centered navigation.</li>
-    <li><a href="Scholar.html">Scholar Platform</a> – Streamlining school operations through role-based dashboards and student engagement tools.</li>
-    <li><a href="forum.html">Forum System</a> – Real-time community messaging with SignalR and modular interaction components.</li>
-  </ul>
-
-  <h2 style="color: #05445E;">✨ Core Values</h2>
-  <p style="font-size: 1.05em;">
-    Purposeful design. Inclusive systems. Technical precision. Every line of code and UI decision I make aims to serve real needs and spark lasting change.
-  </p>
 </section>
 
-
-<footer style="background-color: #05445E; color: white; text-align: center; padding: 2em;">
-  <p style="margin: 0.5em 0;">&copy; 2025 Richard Boakye Yiadom</p>
-  <p style="margin: 0.5em 0;">Back to <a href="index.html" style="color: #75E6DA;">Homepage</a></p>
-</footer>
-
+  <!-- Footer -->
+  <footer style="background-color: #05445E; color: white; text-align: center; padding: 2em;">
+    <p class="mb-1">&copy; 2025 Richard Boakye Yiadom</p>
+    <p><a href="index.html" style="color: #75E6DA;">Back to Homepage</a></p>
+  </footer>
 </body>
 </html>
