@@ -3,78 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>Richard Boakye Yiadom</title>
- <!-- Styles -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
+  <style>
     body {
       background-color: #0E1E2A;
       color: #F5F5F5;
       font-family: 'Segoe UI', sans-serif;
     }
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+    a: hover {
+      text-decoration: underline;
+    }
+    .navbar {
+      background-color: #05445E;
+      padding: 1em;
+    }
     .navbar a {
       color: #F5F5F5;
       margin-right: 1.2em;
-      text-decoration: none;
     }
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .contact-section {
       padding: 4em 2em;
-      flex-wrap: wrap;
+      background-color: #1C2E3A;
+      text-align: center;
     }
-    .hero img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .hero h1 {
-      font-size: 2.8em;
+    .contact-section h1, .contact-section h2 {
       color: #FFD700;
+      margin-bottom: 1em;
     }
-    .hero p {
+    .contact-details {
       font-size: 1.1em;
-      max-width: 500px;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .btn-custom {
-      background-color: #FFD700;
-      color: #0E1E2A;
-      padding: 0.7em 1.5em;
-      border: none;
-      margin-top: 1em;
+    footer {
+      background-color: #05445E;
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+    footer a {
+      color: #75E6DA;
     }
   </style>
-  
 </head>
-  
 <body>
-  <nav style="background-color: #05445E; padding: 1em; display: flex; justify-content: space-between; align-items: center; color: white;">
-  <h2 style="margin: 0;">Boakye Richard Yiadom</h2>
-  <ul style="list-style: none; display: flex; gap: 1.5em; margin: 0;">
-    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-    <li><a href="index.html" style="color: white; text-decoration: none;">Projects</a></li>
-    <li><a href="About.html" style="color: white; text-decoration: none;">About</a></li>
-    <li><a href="Contacts.html" style="color: white; text-decoration: none;">Contacts</a></li>
-  </ul>
-</nav>
 
-<section style="padding: 4em 2em; background-color: #f2f2f2; text-align: center;">
-  <h1 style="color: #05445E;">Let’s Collaborate</h1>
-  <p style="max-width: 600px; margin: 1.5em auto; font-size: 1.1em;">
-    Whether you're interested in education, data systems, tech for healthcare, or empowering youth through robotics, I'm always open to partnerships, feedback, and new ideas.
-  </p>
+  <!-- Navbar -->
+  <nav class="navbar d-flex justify-content-between align-items-center">
+    <h2 class="text-white mb-0">Boakye Richard Yiadom</h2>
+    <ul class="d-flex list-unstyled mb-0 gap-4">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
 
-  <h2 style="color: #05445E;">Contact Details</h2>
-  <p><strong>Email:</strong> richardboakye1710@gmail.com</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/rby122" style="color: #189AB4;">rby122</a></p>
-  <p><strong>Location:</strong> Ashanti Region, Ghana</p>
-</section>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Let’s Collaborate</h1>
+    <p class="contact-details mb-5">
+      Whether you're interested in education, data systems, tech for healthcare, or empowering youth through robotics, I'm always open to partnerships, feedback, and new ideas.
+    </p>
 
-<footer style="background-color: #05445E; color: white; text-align: center; padding: 2em;">
-  <p style="margin: 0.5em 0;">&copy; 2025 Richard Boakye Yiadom</p>
-  <p style="margin: 0.5em 0;">Back to <a href="index.html" style="color: #75E6DA;">Homepage</a></p>
-</footer>
+    <h2>Contact Details</h2>
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:richardboakye1710@gmail.com">richardboakye1710@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/rby122" target="_blank">rby122</a></p>
+      <p><strong>Location:</strong> Ashanti Region, Ghana</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Richard Boakye Yiadom</p>
+    <p>Back to <a href="index.html">Homepage</a></p>
+  </footer>
 
 </body>
 </html>
