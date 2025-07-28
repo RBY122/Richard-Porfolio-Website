@@ -35,4 +35,35 @@
       border: none;
       margin-top: 1em;
     }
-  
+/* Navigation Bar */
+.navbar {
+  background-color: #1A1A2E;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+  color: #F5F5F5;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #FFD700;
+}
+
+/* Footer */
+.footer {
+  background-color: #1A1A2E;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 3em;
+  font-size: 0.95em;
+  border-top: 1px solid rgba(255, 255, 255,)
+}
