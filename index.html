@@ -1,158 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Richard Boakye Yiadom | Developer of educational and healthcare systems in Ghana." />
   <title>Richard Boakye Yiadom</title>
- <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Styles & Icons -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: #0E1E2A;
+      color: #F5F5F5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    a { color: #FFD700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .navbar {
+      background-color: #05445E;
+      padding: 1rem;
+    }
+    .navbar h2 { margin: 0; color: #F5F5F5; }
+    .navbar ul {
+      display: flex;
+      gap: 1.5em;
+      list-style: none;
+      margin: 0;
+    }
+    .navbar ul li a {
+      color: #F5F5F5;
+    }
+    .hero {
+      padding: 4em 2em;
+      text-align: center;
+      background: linear-gradient(to right, #D4F1F4, #75E6DA);
+      color: #05445E;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    .btn-explore {
+      margin-top: 2em;
+      padding: 0.8em 2em;
+      background-color: #05445E;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .projects, .skills {
+      padding: 4em 2em;
+      background-color: #f2f2f2;
+      color: #05445E;
+    }
+    .skills span {
+      background: #75E6DA;
+      padding: 0.6em 1.2em;
+      border-radius: 20px;
+      font-weight: bold;
+      margin: 0.5em;
+      display: inline-block;
+    }
+    footer {
+      background-color: #05445E;
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+    footer a { color: #75E6DA; }
+    .social-icons a {
+      margin: 0 0.5em;
+      color: white;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
-  
 <body>
-  <nav style="background-color: #05445E; padding: 1em; display: flex; justify-content: space-between; align-items: center; color: white;">
-  <h2 style="margin: 0;">Boakye Richard Yiadom</h2>
-  <ul style="list-style: none; display: flex; gap: 1.5em; margin: 0;">
-    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-    <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
-    <li><a href="About.html" style="color: white; text-decoration: none;">About</a></li>
-    <li><a href="Contacts.html" style="color: white; text-decoration: none;">Contacts</a></li>
-  </ul>
-</nav>
 
-  <section style="padding: 4em 2em; text-align: center; background: linear-gradient(to right, #D4F1F4, #75E6DA); color: #05445E;">
-  <h1 style="font-size: 2.5em; margin-bottom: 0.5em;">Empowering Education & Healthcare</h1>
-  <p style="font-size: 1.2em; max-width: 600px; margin: auto;">
-    Through code, vision, and community building, I design systems that bring real change, such as <strong>BloodBridge</strong> and <strong>Scholar</strong>.
-  </p>
-  <a href="#projects" style="display: inline-block; margin-top: 2em; padding: 0.8em 2em; background-color: #05445E; color: white; border-radius: 5px; text-decoration: none;">
-  <i data-feather="compass" style="vertical-align: middle; margin-right: 8px;"></i> Explore My Projects
-</a>
+  <!-- Navigation -->
+  <nav class="navbar d-flex justify-content-between align-items-center">
+    <h2>Boakye Richard Yiadom</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Empowering Education & Healthcare</h1>
+    <p>
+      Through code, vision, and community building, I design systems that bring real change, such as <strong>BloodBridge</strong> and <strong>Scholar</strong>.
+    </p>
+    <a href="#projects" class="btn-explore"><i data-feather="compass"></i> Explore My Projects</a>
+  </section>
 
-    
-<section id="projects" style="padding: 4em 2em; background-color: #f2f2f2;">
-  <h2 style="text-align: center; color: #05445E; margin-bottom: 2em;">Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="projects text-center">
+    <h2>Projects</h2>
 
-  <!-- Project Carousel -->
-  <div id="ProjectCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-inner text-center">
-      
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
-          <div class="card-body">
-            <h3 class="card-title" style="color: #05445E;">BloodBridge</h3>
-            <p class="card-text text-muted">
-              Reimagining blood donation and tracking in Ghana with tech-driven efficiency.
-            </p>
-            <a href="bloodbridge.html" class="btn btn-outline-primary" style="color: #189AB4; border-color: #189AB4;">
-              View Project →
-            </a>
+    <div id="ProjectCarousel" class="carousel slide mb-5" data-bs-ride="carousel" aria-label="Project Highlights">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
+            <div class="card-body">
+              <h3>BloodBridge</h3>
+              <p class="text-muted">Reimagining blood donation and tracking in Ghana with tech-driven efficiency.</p>
+              <a href="bloodbridge.html" class="btn btn-outline-primary">View Project →</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
-          <div class="card-body">
-            <h3 class="card-title" style="color: #05445E;">Scholar</h3>
-            <p class="card-text text-muted">
-              A modular school management system built for seamless admin and student interaction.
-            </p>
-            <a href="Scholar.html" class="btn btn-outline-primary" style="color: #189AB4; border-color: #189AB4;">
-              View Project →
-            </a>
+        <div class="carousel-item">
+          <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
+            <div class="card-body">
+              <h3>Scholar</h3>
+              <p class="text-muted">A modular school management system built for seamless admin and student interaction.</p>
+              <a href="Scholar.html" class="btn btn-outline-primary">View Project →</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
-          <div class="card-body">
-            <h3 class="card-title" style="color: #05445E;">STEAM Robotics Outreach</h3>
-            <p class="card-text text-muted">
-              Empowering young learners through creative robotics kits and workshops.
-            </p>
-            <a href="robots.html" class="btn btn-outline-primary" style="color: #189AB4; border-color: #189AB4;">
-              View Project →
-            </a>
+        <div class="carousel-item">
+          <div class="card mx-auto shadow-sm border-0" style="max-width: 600px;">
+            <div class="card-body">
+              <h3>STEAM Robotics Outreach</h3>
+              <p class="text-muted">Empowering young learners through creative robotics kits and workshops.</p>
+              <a href="robots.html" class="btn btn-outline-primary">View Project →</a>
+            </div>
           </div>
         </div>
+
       </div>
 
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </section>
 
-    <!-- Optional Carousel Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+  <!-- Skills Section -->
+  <section class="skills text-center">
+    <h2><i data-feather="tools"></i> Skills & Tools</h2>
+    <div>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>ASP.NET Core</span>
+      <span>Firebase</span>
+      <span>Database Design</span>
+      <span>UI/UX</span>
+      <span>STEAM Robotics</span>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Richard Boakye Yiadom</p>
+    <p><strong><i data-feather="mail"></i> Email:</strong> richardboakye1710@gmail.com &nbsp;|&nbsp;
+       <strong><i data-feather="github"></i> GitHub:</strong> <a href="https://github.com/rby122" target="_blank">rby122</a></p>
+    <p><i data-feather="map-pin"></i> Ashanti Region, Ghana</p>
 
+    <div class="social-icons mt-3">
+      <a href="https://facebook.com/YourProfile" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/233596833199" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/YourProfile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/YourProfile" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
 
-<span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold; transition: background 0.3s;">
-  
-
-
-  <section style="padding: 4em 2em; background-color: #D4F1F4;">
-  <h2 style="text-align: center; color: #05445E; margin-bottom: 2em;"><i data-feather="tools" style="vertical-align: middle;"></i> Skills & Tools</h2>
-  
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">HTML</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">CSS</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">JavaScript</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">ASP.NET Core</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">Firebase</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">Database Design</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">UI/UX</span>
-    <span style="background: #75E6DA; padding: 0.6em 1.2em; border-radius: 20px; font-weight: bold;">STEAM Robotics</span>
-  </div>
-</section>
-
-
-
-</footer>
-<footer style="background-color: #05445E; color: white; text-align: center; padding: 2em;">
-  <p style="margin: 0.5em 0;">&copy; 2025 Richard Boakye Yiadom</p>
-
-  <p style="margin: 0.5em 0;">
-    <strong><i data-feather="mail" style="vertical-align: middle;"></i> Email:</strong> richardboakye1710@gmail.com &nbsp;|&nbsp;
-    <strong><i data-feather="github" style="vertical-align: middle;"></i> GitHub:</strong>
-    <a href="https://github.com/rby122" style="color: #75E6DA; text-decoration: none;">rby122</a>
-  </p>
-
-  <p style="margin: 0.5em 0;">
-    <i data-feather="map-pin" style="vertical-align: middle;"></i> Ashanti Region, Ghana
-  </p>
-
-  <div style="margin-top: 1em;">
-    <a href="https://facebook.com/YourProfile" style="color: white; margin: 0 0.5em;" target="_blank"><i data-feather="facebook"></i></a>
-    <a href="https://wa.me/233596833199" style="color: white; margin: 0 0.5em;" target="_blank"><i data-feather="message-circle"></i></a>
-    <a href="https://x.com/YourProfile" style="color: white; margin: 0 0.5em;" target="_blank"><i data-feather="twitter"></i></a>
-    <a href="https://instagram.com/YourProfile" style="color: white; margin: 0 0.5em;" target="_blank"><i data-feather="instagram"></i></a>
-  </div>
-</footer>
-
-
-
-  
-   <!-- External Libraries -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/feather-icons"></script>
-
-<!-- Feather Activation AFTER it's loaded -->
-<script>
-  feather.replace();
-</script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    window.addEventListener('load', () => feather.replace());
+  </script>
 </body>
 </html>
