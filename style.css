@@ -127,9 +127,8 @@ body {
   font-weight: 500;
 }
 
-/* Footer */
 footer {
-  background-color: #1A1A2E;
+  background-color: #0E1E2A; /* Dark navy for depth */
   color: #F5F5F5;
   text-align: center;
   padding: 2em 1em;
@@ -137,12 +136,12 @@ footer {
 }
 
 footer a {
-  color: #75E6DA;
+  color: #75E6DA; /* Aqua accent for clickable links */
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #FFD700;
+  color: #FFD700; /* Gold highlight on hover */
 }
 
 .social-icons a {
@@ -153,5 +152,17 @@ footer a:hover {
 }
 
 .social-icons a:hover {
+  color: #FFD700;
+}
+
+
+.social-icons a {
+  color: #F5F5F5;
+  margin: 0 0.6em;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a: hover {
   color: #FFD700;
 }
