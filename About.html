@@ -79,15 +79,33 @@
     Technology should serve humanity. I strive to create tools that feel intuitive, accessible, and empowering. Every system I build reflects a commitment to inclusion, purpose, and sustainable impact—whether in classrooms or clinics.
   </p>
 </section>
+<!-- Load Feather Icons and Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<script src="https://unpkg.com/feather-icons"></script>
+
 <section class="container py-5">
   <h2 class="text-warning text-center mb-4">How I Work</h2>
   <div class="row text-center">
-    <div class="col-md-3"><i class="fas fa-search text-info fa-lg"></i><br> Research-Driven Development</div>
-    <div class="col-md-3"><i class="fas fa-lightbulb text-info fa-lg"></i><br> Human-Centered Ideation</div>
-    <div class="col-md-3"><i class="fas fa-tools text-info fa-lg"></i><br> Iterative Refinement</div>
-    <div class="col-md-3"><i class="fas fa-users text-info fa-lg"></i><br> Inclusive Collaboration</div>
+    <div class="col-md-3 animate__animated animate__fadeInUp">
+      <i data-feather="search" style="width: 48px; height: 48px;" class="text-info mb-2"></i><br>
+      <strong>Research-Driven Development</strong>
+    </div>
+    <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-1s">
+      <i data-feather="lightbulb" style="width: 48px; height: 48px;" class="text-info mb-2"></i><br>
+      <strong>Human-Centered Ideation</strong>
+    </div>
+    <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-2s">
+      <i data-feather="tool" style="width: 48px; height: 48px;" class="text-info mb-2"></i><br>
+      <strong>Iterative Refinement</strong>
+    </div>
+    <div class="col-md-3 animate__animated animate__fadeInUp animate__delay-3s">
+      <i data-feather="users" style="width: 48px; height: 48px;" class="text-info mb-2"></i><br>
+      <strong>Inclusive Collaboration</strong>
+    </div>
   </div>
 </section>
+
+
 
   <section class="container py-5">
   <h2 class="text-warning text-center mb-4">My Journey</h2>
@@ -121,5 +139,10 @@
     <p class="mb-1">&copy; 2025 Richard Boakye Yiadom</p>
     <p><a href="index.html" style="color: #75E6DA;">Back to Homepage</a></p>
   </footer>
+
+  <!-- Activate Feather Icons -->
+<script>
+  feather.replace();
+</script>
 </body>
 </html>
