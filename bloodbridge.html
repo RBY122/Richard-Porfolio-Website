@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Richard Boakye Yiadom</title>
+  <title>BloodBridge – Richard Boakye Yiadom</title>
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -13,131 +13,88 @@
       color: #F5F5F5;
       font-family: 'Segoe UI', sans-serif;
     }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    p, .lead, a, li, button { font-size: 1rem; }
     .navbar a {
       color: #F5F5F5;
       margin-right: 1.2em;
       text-decoration: none;
     }
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4em 2em;
-      flex-wrap: wrap;
-    }
-    .hero img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .hero h1 {
-      font-size: 2.8em;
+    .btn-outline-danger {
+      border-color: #FFD700;
       color: #FFD700;
     }
-    .hero p {
-      font-size: 1.1em;
-      max-width: 500px;
-    }
-    .btn-custom {
+    .btn-outline-danger:hover {
       background-color: #FFD700;
       color: #0E1E2A;
-      padding: 0.7em 1.5em;
-      border: none;
-      margin-top: 1em;
     }
-
-    /* Consistent font family for the entire page */
-body, h1, h2, h3, h4, h5, h6, p, button, a {
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Normalize font sizes */
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-p, .lead { font-size: 1rem; }
-
-/* Buttons and navbar links */
-button, .btn-custom, .navbar a {
-  font-size: 1rem;
-}
-
   </style>
 </head>
-
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #05445E; padding: 1em;">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white fw-bold" href="index.html">Boakye Richard Yiadom</a>
-      <ul class="navbar-nav ms-auto d-flex flex-row gap-4">
-        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="About.html">About</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="Contacts.html">Contacts</a></li>
-      </ul>
-    </div>
-  </nav>
 
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #05445E; padding: 1em;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white fw-bold" href="index.html">Boakye Richard Yiadom</a>
+    <ul class="navbar-nav ms-auto d-flex flex-row gap-4">
+      <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="About.html">About</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="Contacts.html">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
 
-  
-<section style="padding: 4em 2em; background-color: #f2f2f2;">
-  <h1 style="text-align: center; color: #05445E;">🩸 BloodBridge</h1>
-  <p style="max-width: 700px; margin: 2em auto; font-size: 1.1em;">
-    <strong>BloodBridge</strong> is a technology-powered platform revolutionizing blood donation logistics in Ghana. Developed with <strong>ASP.NET Core</strong> and <strong>Firebase Realtime Database</strong>, it bridges the gap between hospitals, donors, and recipients—ensuring fast, transparent, and lifesaving coordination.
-  </p>
+<!-- Main Section -->
+<section style="padding: 4em 2em; background-color: #f2f2f2; color: #0E1E2A;">
+  <div class="container">
+    <h1 class="text-center mb-4">🩸 BloodBridge</h1>
+    <p class="lead mx-auto" style="max-width: 700px;">
+      <strong>BloodBridge</strong> is a technology-powered platform revolutionizing blood donation logistics in Ghana. Developed using <strong>ASP.NET Core</strong> and <strong>Firebase Realtime Database</strong>, it bridges the gap between hospitals, donors, and recipients—ensuring fast, transparent, and lifesaving coordination.
+    </p>
 
-  <h2 style="color: #05445E;">🔧 Technologies Used</h2>
-  <p style="max-width: 700px; margin: 1em auto;">
-    The platform combines modern backend architecture with seamless front-end accessibility, empowering users from all roles to take action in real time.
-  </p>
-  <ul style="list-style: none; padding-left: 0;">
-    <li>✔️ <strong>ASP.NET Core</strong> for structured and secure system logic</li>
-    <li>✔️ <strong>Firebase Realtime Database</strong> for continuous data sync</li>
-    <li>✔️ <strong>Responsive UI/UX design</strong> with CSS and AOS animations</li>
-    <li>✔️ <strong>Role-based dashboards</strong> for hospitals, donors, and administrators</li>
-  </ul>
+    <h2 class="mt-5">🔧 Technologies Used</h2>
+    <p style="max-width: 700px;">
+      The platform combines modern backend architecture with seamless front-end accessibility, empowering users from all roles to take action in real time.
+    </p>
+    <ul class="list-unstyled" style="max-width: 700px;">
+      <li>✔️ <strong>ASP.NET Core</strong> for structured and secure system logic</li>
+      <li>✔️ <strong>Firebase Realtime Database</strong> for continuous data sync</li>
+      <li>✔️ <strong>Responsive UI/UX design</strong> with CSS and AOS animations</li>
+      <li>✔️ <strong>Role-based dashboards</strong> for hospitals, donors, and administrators</li>
+    </ul>
 
-  <h2 style="color: #05445E;">🔁 How It Works</h2>
-  <p style="max-width: 700px; margin: 1.5em auto;">
-    BloodBridge operates through a multi-role interface that connects the dots between critical blood requests and available donors. Hospitals post verified requests, donors respond via the platform, and system alerts coordinate fulfillment—all backed by real-time tracking and notifications.
-  </p>
-  <!-- Optional: Mockup video goes here -->
+    <h2 class="mt-5">🔁 How It Works</h2>
+    <p style="max-width: 700px;">
+      BloodBridge operates through a multi-role interface that connects the dots between critical blood requests and available donors. Hospitals post verified requests, donors respond via the platform, and system alerts coordinate fulfillment—all backed by real-time tracking and notifications.
+    </p>
 
-  <h2 style="color: #05445E;">📊 Dashboards & Roles</h2>
-  <p style="max-width: 700px; margin: 1.5em auto;">
-    Each user sees an interface tailored to their needs. Hospitals monitor incoming requests and stocks, donors view nearby calls for help, and admins oversee platform integrity and analytics.
-  </p>
-  <!-- Optional: Wireframes or UI previews -->
+    <h2 class="mt-5">📊 Dashboards & Roles</h2>
+    <p style="max-width: 700px;">
+      Each user sees an interface tailored to their needs. Hospitals monitor incoming requests and stocks, donors view nearby calls for help, and admins oversee platform integrity and analytics.
+    </p>
 
-  <h2 style="color: #05445E;">🌍 Impact & Vision</h2>
-  <p style="max-width: 700px; margin: 1.5em auto;">
-    BloodBridge is designed to minimize delays and improve transparency in blood supply systems. Its long-term goal is to empower medical responders with efficient data, encourage donor culture, and expand across regions—starting with Ghana, but scalable to other developing countries.
-  </p>
+    <h2 class="mt-5">🌍 Impact & Vision</h2>
+    <p style="max-width: 700px;">
+      BloodBridge is designed to minimize delays and improve transparency in blood supply systems. Its long-term goal is to empower medical responders with efficient data, encourage donor culture, and expand across regions—starting with Ghana and scalable to other developing countries.
+    </p>
 
-  <h2 style="color: #05445E;">🤝 Collaboration & Outreach</h2>
-  <p style="max-width: 700px; margin: 1.5em auto;">
-    Want to join the mission? Whether you're a hospital administrator, NGO partner, or tech collaborator, BloodBridge welcomes your insight and support. Let's build the future of healthcare logistics together.
-  </p>
-  <a href="Contacts.html" class="btn btn-outline-danger">Connect with Me</a>
+    <h2 class="mt-5">🤝 Collaboration & Outreach</h2>
+    <p style="max-width: 700px;">
+      Want to join the mission? Whether you're a hospital administrator, NGO partner, or tech collaborator, BloodBridge welcomes your insight and support. Let’s build the future of healthcare logistics together.
+    </p>
+    <a href="Contacts.html" class="btn btn-outline-danger mt-3">Connect with Me</a>
+  </div>
 </section>
 
-
-
-  <!-- Footer -->
-<footer class="text-center py-4" style="font-family: 'Segoe UI', sans-serif; font-size: 1rem;">
+<!-- Footer -->
+<footer class="text-center py-4 mt-5" style="font-size: 1rem;">
   <p>&copy; 2025 Richard Boakye Yiadom</p>
-
   <p>
     <strong><i data-feather="mail"></i> Email:</strong> richardboakye1710@gmail.com &nbsp;|&nbsp;
-    <strong><i data-feather="github"></i> GitHub:</strong> 
-    <a href="https://github.com/rby122" target="_blank" style="text-decoration: none;">rby122</a>
+    <strong><i data-feather="github"></i> GitHub:</strong> <a href="https://github.com/rby122" target="_blank" style="text-decoration: none;">rby122</a>
   </p>
-
-  <p>
-    <i data-feather="map-pin"></i> Ashanti Region, Ghana
-  </p>
-
+  <p><i data-feather="map-pin"></i> Ashanti Region, Ghana</p>
   <div class="social-icons mt-3" style="font-size: 1.2rem;">
     <a href="https://facebook.com/YourProfile" target="_blank" class="me-3"><i class="fab fa-facebook"></i></a>
     <a href="https://wa.me/233596833199" target="_blank" class="me-3"><i class="fab fa-whatsapp"></i></a>
@@ -146,10 +103,7 @@ button, .btn-custom, .navbar a {
   </div>
 </footer>
 
-  <!-- Activate Feather Icons -->
-<script>
-  feather.replace();
-</script>
-  
+<!-- Feather Icons Activation -->
+<script>feather.replace();</script>
 </body>
 </html>
